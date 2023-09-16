@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supriyo's Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/5c604f27f0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" id="logo">Supriyo</a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()" style="color: #ff0000;"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()" style="color: #0011ff;"></i>        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm Supriyo Ghosh <br><span class="typing"></span></span>Kolkata</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------About-------------------------  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/supriyo.png.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+            HLW,I am Supriyo Ghosh .Currently I am studying Information Technology in Haldia Institute of Technology College I am in second year now.Also I am a member of CSI HIT student branch of the college and assigned as a teacher in our college ofiicial NGO name-Samarpan.I know about front end technology like html ,css ,javascript and know Java programming language and C programming language and also know to control open source platfrom like Git & Github.i am selected as a contributer to open source for next three months as GSSOC'23 CONTRIBUTER.i am also member of GDG CLOUD KOLKATA.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('projects')">Projects</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>WebSite</span><br />Designing Frontend website</li>
+                <li><span>Programming</span><br />Skilled C/java Programmer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Matriculation</span><br />R.B.L.I,Pschim Medinipur, WBBSE Board</li>
+                <li><span>Higher-Secondary</span><br />R.B.L.I, WBBHSE Board</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+              <ul>
+                <li><span>WebProjects</span><br />virtual education</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------- Contact----------------------------- -->
+    <div id="contact">
+        <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope fa-bounce"></i>supriyo*********@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume fa-shake" style="color: whitesmoke;"></i>8101******</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100084852960243&mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-shake"></i></a>
+                            <a href="https://instagram.com/its_sghosh?igshid=NGVhN2U2NjQ0Yg"><i class="fa-brands fa-square-instagram fa-shake"></i></a>
+                            <a href="https://www.linkedin.com/in/supriyo-ghosh-622a80263"><i class="fa-brands fa-linkedin fa-shake"></i></a>
+                            <a href="https://x.com/Iamsupriyo28?t=oa8UFJT3TLDEJCgcxZW1Vg&s=09"><i class="fa-brands fa-x fa-shake"></i></a>
+                            <a href="https://leetcode.com/supriyo_28/"><i class="fa-brands fa-free-code-camp fa-shake"></i></a>
+                            
+
+                        </div>
+                        <a href="supriyocv.txt.txt" download class="btn btn2" >Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Messege" rows="6" placeholder="Your Messege"></textarea>
+                            <button type="submit" class="btn btn2" >Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © S.ghosh. Made by <i class="fa-sharp fa-solid fa-code fa-beat-fade" style="color: #ff0000;"></i> Supriyo Ghosh </p>
+
+        </div>
+    </div>
+
+  <script>
+    // Typing Animation Script
+    var typed = new Typed(".typing", {
+      strings: ["UG Student","B.TECH IT","Developer","photographer"],
+      typeSpeed: 100,
+      loop: true
+    });
+  </script>
+
+  </body>
+</html>
